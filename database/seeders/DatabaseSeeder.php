@@ -19,5 +19,12 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        \App\Models\Category::insert([
+            ['nama' => 'Undangan', 'keterangan' => 'Surat undangan rapat, koordinasi, dll.'],
+            ['nama' => 'Pengumuman', 'keterangan' => 'Surat-surat terkait pengumuman.'],
+            ['nama' => 'Nota Dinas', 'keterangan' => 'Surat nota dinas internal/eksternal.'],
+            ['nama' => 'Pemberitahuan', 'keterangan' => 'Surat pemberitahuan resmi.'],
+        ]);
     }
 }
